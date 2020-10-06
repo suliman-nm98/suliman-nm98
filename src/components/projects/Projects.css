@@ -1,1 +1,48 @@
-rcfe
+.projects {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 20px 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.projects > h1 {
+  margin-bottom: 50px;
+  width: 200px;
+  padding: 10px;
+  border-bottom: 6px solid rgba(78, 78, 255, 2);
+}
+
+.projects .projects__container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+  background-color: white;
+  text-align: left;
+}
+
+.projects__project {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  z-index: 1;
+  /* align-items: center; */
+  /* justify-content: flex-end; */
+  padding: 20px;
+  width: 100%;
+  max-height: 400px;
+  min-width: 100px;
+  border-right: 1px solid lightgray;
+}
+
+.projects__project > img {
+  max-height: 250px;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+@media {
+}

@@ -11,9 +11,7 @@ function Banner() {
         <h1>SULIMAN NOOR</h1>
         <h3>Developer, Designer, Boxer</h3>
         <div className="socialmedia__links">
-          <a href="">
-            <div className="item"></div>
-          </a>
+          <a href="">{/* <img src="_"> */}</a>
         </div>
       </div>
     </div>
