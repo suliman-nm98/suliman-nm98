@@ -4,6 +4,10 @@ function Timeline() {
   return (
     <div className="timeline">
       <h1>Timeline</h1>
+      <div className="timeline__left timeline__item">
+        <h5 className="timeline__title">Web Developer</h5>
+        <p>helping a company to overhaul their website </p>
+      </div>
       <ul className="timeline__list">
         {/* <!-- Item 1 --> */}
         <li>
