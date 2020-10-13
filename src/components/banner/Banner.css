@@ -9,6 +9,7 @@
 .banner__container {
   text-align: center;
   margin: 0 auto;
+  min-width: 400px;
 }
 .banner__container > img {
   width: 200px;
@@ -21,5 +22,6 @@
 
 .banner__container > h1 {
   font-size: 46px;
-  margin-bottom: 8px;
+  width: fit-content;
+  margin-bottom: 10px;
 }

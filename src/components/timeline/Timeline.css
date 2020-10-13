@@ -31,6 +31,7 @@ h1 {
   display: flex;
   position: relative;
   flex-direction: column;
+  overflow: hidden;
   justify-content: center;
   margin-top: 20px;
   padding: 20px 50px;
