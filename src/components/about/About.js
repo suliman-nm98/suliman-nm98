@@ -5,11 +5,11 @@ function About() {
     <div className="about">
       <h1>About me</h1>
       <p>
-        Hi, this is Suliman Noor, I'm a Software Engineer based in Dubai, UAE!
-      </p>
-      <p>
-        I develop mobile and mostly web applications with the most updated
-        frameworks and technplogies in the field.
+        Results-driven Fullstack Software Engineer with proficiency in
+        architecting, designing, and exceptional proficiency in Java,
+        JavaScript, Dart, React.js, Flutter, and SQL. Self-motivated and
+        directed with demonstrated ability to succeed in team-based
+        environments.
       </p>
     </div>
   );
