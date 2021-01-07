@@ -21,7 +21,7 @@ function Projects() {
                   <span class="fg-item-icon-inner">Github</span>
                 </a>
                 <a href="#">
-                  <span class="fg-item-icon-inner">Live Demo</span>
+                  <span class="fg-item-icon-inner">Lives Demo</span>
                 </a>
               </div>
             </div>
