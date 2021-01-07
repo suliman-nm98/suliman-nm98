@@ -27,7 +27,7 @@ function Projects() {
             </div>
           </div>
           <div className="project__project__description">
-            <h3>Project Title</h3>
+            <h3>Project T</h3>
           </div>
           <div className="project__tags"></div>
         </div>
