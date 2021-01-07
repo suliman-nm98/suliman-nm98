@@ -9,7 +9,7 @@
 .banner__container {
   text-align: center;
   margin: 0 auto;
-  min-width: 400px;
+  min-width: 300px;
 }
 .banner__container > img {
   width: 200px;

@@ -2,7 +2,7 @@
   background: black;
   display: flex;
   flex-direction: column;
-  height: 300px;
+  height: fit-content;
   color: white;
   padding: 20px 50px;
   justify-content: center;
