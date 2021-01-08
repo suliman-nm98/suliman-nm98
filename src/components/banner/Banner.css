@@ -25,3 +25,17 @@
   width: fit-content;
   margin-bottom: 10px;
 }
+.socialMedia__links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.socialMedia__links > a {
+  display: inline-block;
+  font-size: 36px;
+  margin-top: 10px;
+  color: #000;
+  margin-right: 10px;
+}
