@@ -19,22 +19,22 @@ function Banner() {
         <h1>Hi, I'm Suliman🤝</h1>
         <h3>Developer, Designer & Athletic</h3>
         <div className="socialMedia__links">
-          <a href="www.linkedin.com/in/suliman-nm98" target="_blank">
+          <a href="https://www.linkedin.com/in/suliman-nm98" target="_blank">
             <span>
               <FontAwesomeIcon icon={faLinkedin} />
             </span>
           </a>
-          <a href="www.linkedin.com/in/suliman-nm98" target="_blank">
+          <a href="https://www.instagram.com/suliman_code98/" target="_blank">
             <span>
               <FontAwesomeIcon icon={faInstagram} />
             </span>
           </a>
-          <a href="www.linkedin.com/in/suliman-nm98" target="_blank">
+          <a href="https://www.github.com/suliman-nm98/" target="_blank">
             <span>
               <FontAwesomeIcon icon={faGithub} />
             </span>
           </a>
-          <a href="www.linkedin.com/in/suliman-nm98" target="_blank">
+          <a href="https://twitter.com/Suliman_Guzran" target="_blank">
             <span>
               <FontAwesomeIcon icon={faTwitter} />
             </span>
