@@ -1,66 +1,70 @@
 import React from "react";
 import "./Projects.css";
 function Projects() {
+  var projects = [
+    {
+      title: "Company business portfolio",
+      image: "assets/images/roco.jpg",
+      live_demo: "https://roco.ooo/roco/index.html",
+      github: "",
+    },
+    {
+      title: "Event Managment Application",
+      image: "assets/images/eve.png",
+      live_demo: "",
+      github: "https://github.com/suliman-nm98/EVE",
+    },
+
+    {
+      title: "E-commerce platfrom",
+      image: "assets/images/sellox_io.PNG",
+      live_demo: "https://sellox.app/category",
+      github: "",
+    },
+  ];
   return (
     <div className="projects">
       <h1>My Projects</h1>
       <div className="projects__container">
-        <div className="projects__project">
-          <div className="projects__project__thumbnail">
-            <img
-              alt="project"
-              src="https://images.pexels.com/photos/4818188/pexels-photo-4818188.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-            />
-            <div className="projects__project__overlay">
-              <div class="projects__project__overlayBtns">
-                <a
-                  href="https://static.live.templately.com/2020/08/c881dc8e-project-2.jpg"
-                  class="eael-magnific-link"
-                  data-elementor-open-lightbox="no"
-                >
-                  <span class="fg-item-icon-inner">Github</span>
-                </a>
-                <a href="#">
-                  <span class="fg-item-icon-inner">Lives Demo</span>
-                </a>
+        {projects.map((project, i) => {
+          return (
+            <div key={i} className="projects__project">
+              <div className="projects__project__thumbnail">
+                <img alt="project" src={project.image} />
+                <div className="projects__project__overlay">
+                  <div className="projects__project__overlayBtns">
+                    {!project.github ? (
+                      ""
+                    ) : (
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <span className="fg-item-icon-inner">Github</span>
+                      </a>
+                    )}
+                    {project.live_demo ? (
+                      <a
+                        href={project.live_demo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <span className="fg-item-icon-inner">Lives Demo</span>
+                      </a>
+                    ) : (
+                      ""
+                    )}
+                  </div>
+                </div>
               </div>
+              <div className="project__project__description">
+                <h3>{project.title}</h3>
+              </div>
+              <div className="project__tags"></div>
             </div>
-          </div>
-          <div className="project__project__description">
-            <h3>Project T</h3>
-          </div>
-          <div className="project__tags"></div>
-        </div>
-        <div className="projects__project">
-          <div className="projects__project__thumbnail">
-            <img
-              alt="project"
-              src="https://images.pexels.com/photos/4818188/pexels-photo-4818188.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-            />
-            <div className="projects__project__overlay">
-              <a></a>
-            </div>
-          </div>
-          <div className="project__project__description">
-            <h3>Project Title</h3>
-          </div>
-          <div className="project__tags"></div>
-        </div>
-        <div className="projects__project">
-          <div className="projects__project__thumbnail">
-            <img
-              alt="project"
-              src="https://images.pexels.com/photos/4818188/pexels-photo-4818188.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-            />
-            <div className="projects__project__overlay">
-              <a></a>
-            </div>
-          </div>
-          <div className="project__project__description">
-            <h3>Project Title</h3>
-          </div>
-          <div className="project__tags"></div>
-        </div>
+          );
+        })}
       </div>
     </div>
   );
