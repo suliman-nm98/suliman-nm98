@@ -4,13 +4,13 @@ function Projects() {
   var projects = [
     {
       title: "Company business portfolio",
-      image: "assets/images/roco.jpg",
+      image: "assets/images/roco.JPG",
       live_demo: "https://roco.ooo/roco/index.html",
       github: "",
     },
     {
       title: "Event Managment Application",
-      image: "assets/images/eve.png",
+      image: "assets/images/eve.PNG",
       live_demo: "",
       github: "https://github.com/suliman-nm98/EVE",
     },
