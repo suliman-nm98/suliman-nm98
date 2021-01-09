@@ -19,10 +19,12 @@ function Banner() {
   return (
     <div className="banner">
       <div className="banner__container">
-        <img
-          src="https://avatars0.githubusercontent.com/u/34018201?s=400&u=e61f7958d14d15ab64aed18c576929d636cb75a6&v=4"
-          alt=""
-        />
+        <div className="banner__container__background">
+          <img
+            src="https://avatars0.githubusercontent.com/u/34018201?s=400&u=e61f7958d14d15ab64aed18c576929d636cb75a6&v=4"
+            alt=""
+          />
+        </div>
         <h1>
           Hi, I'm Suliman
           <span role="img" aria-label="handshake">

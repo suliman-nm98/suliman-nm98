@@ -36,31 +36,30 @@ function Projects() {
             <div key={i} className="projects__project">
               <div className="projects__project__thumbnail">
                 <img alt="project" src={project.image} />
-                <div className="projects__project__overlay">
-                  <div className="projects__project__overlayBtns">
-                    {!project.github ? (
-                      ""
-                    ) : (
-                      <a
-                        href={project.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <span className="fg-item-icon-inner">Github</span>
-                      </a>
-                    )}
-                    {project.live_demo ? (
-                      <a
-                        href={project.live_demo}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <span className="fg-item-icon-inner">Lives Demo</span>
-                      </a>
-                    ) : (
-                      ""
-                    )}
-                  </div>
+                <div className="projects__project__overlay"></div>
+                <div className="projects__project__overlayBtns">
+                  {!project.github ? (
+                    ""
+                  ) : (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span className="fg-item-icon-inner">Github</span>
+                    </a>
+                  )}
+                  {project.live_demo ? (
+                    <a
+                      href={project.live_demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span className="fg-item-icon-inner">Lives Demo</span>
+                    </a>
+                  ) : (
+                    ""
+                  )}
                 </div>
               </div>
               <div className="project__project__description">

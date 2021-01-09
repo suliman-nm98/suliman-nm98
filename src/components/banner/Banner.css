@@ -11,19 +11,60 @@
   margin: 0 auto;
   min-width: 300px;
 }
-.banner__container > img {
+.banner__container__background {
   width: 200px;
   height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto 20px auto;
+  /* animation: rotate 3s linear infinite; */
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+.banner__container .banner__container__background > img {
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   object-fit: contain;
-  padding: 5px;
-  margin-bottom: 20px;
+}
+
+.banner__container .banner__container__background::before {
+  box-sizing: border-box;
+  content: "";
+  position: absolute;
+  z-index: -2;
+  width: 220px;
+  height: 220px;
+  background-color: #39998a;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: 50%;
+  background-position: 0 0, 20% 0, 20% 20%, 0 20%, 30% 30%;
+  background-image: linear-gradient(
+    red,
+    orange,
+    yellow,
+    green,
+    #ff00ff,
+    blue,
+    violet
+  );
+  animation: rotate 3s linear infinite;
 }
 
 .banner__container > h1 {
   font-size: 46px;
   width: fit-content;
   margin-bottom: 10px;
+  -webkit-animation: RGBshift 3s infinite alternate;
+  animation: RGBshift 2s infinite alternate;
 }
 .socialMedia__links {
   display: flex;
@@ -38,4 +79,59 @@
   margin-top: 10px;
   color: #000;
   margin-right: 10px;
+}
+
+@keyframes RGBshift {
+  0% {
+    transform: rotate(0deg);
+    text-shadow: 5px 10px 0px rgb(245, 245, 241);
+    opacity: 1;
+  }
+  6% {
+    transform: rotate(0.5deg) scale(1.01);
+    text-shadow: 1px 1px 0px rgba(255, 0, 0, 0.5),
+      -5px -2px 0px rgba(0, 255, 0, 0.5), -2px 4px 0px rgba(0, 0, 255, 0.5);
+    opacity: 1;
+  }
+  10% {
+    transform: rotate(0deg);
+    text-shadow: 8px -2px 0px rgba(255, 0, 0, 0.5),
+      -5px -2px 0px rgba(0, 255, 0, 0.5), 2px -2px 0px rgba(0, 0, 255, 0.5);
+    opacity: 0.6;
+  }
+  12% {
+    text-shadow: none;
+    opacity: 1;
+  }
+  58% {
+    transform: rotate(0deg);
+    text-shadow: none;
+    opacity: 1;
+  }
+  59% {
+    text-shadow: -5px -8px 0px rgb(245, 245, 241);
+    opacity: 0.6;
+  }
+  62% {
+    transform: rotate(-0.5deg) scale(1.01);
+    text-shadow: 8px -2px 0px rgba(255, 0, 0, 0.5),
+      -5px -2px 0px rgba(0, 255, 0, 0.5), 2px -2px 0px rgba(0, 0, 255, 0.5);
+    opacity: 1;
+  }
+  64% {
+    transform: rotate(-0.75deg) scale(1.01);
+  }
+  67% {
+    text-shadow: none;
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.socialMedia__links > a:hover {
+  transform: scale(1.6);
+  color: red;
+  transition: 0.3s;
 }
