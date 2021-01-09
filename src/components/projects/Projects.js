@@ -14,7 +14,12 @@ function Projects() {
       live_demo: "",
       github: "https://github.com/suliman-nm98/EVE",
     },
-
+    {
+      title: "E-commerce platfrom",
+      image: "assets/images/sellox_io.PNG",
+      live_demo: "https://sellox.app/category",
+      github: "",
+    },
     {
       title: "E-commerce platfrom",
       image: "assets/images/sellox_io.PNG",

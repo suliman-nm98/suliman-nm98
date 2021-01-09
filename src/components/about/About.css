@@ -1,19 +1,50 @@
-.about {
-  background: black;
+.about-wrapper {
   display: flex;
   flex-direction: column;
-  height: fit-content;
-  color: white;
-  padding: 20px 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  width: 100%;
+  padding: 4em 0;
+}
+.about > * {
+  padding: 1em;
+}
+
+.about-title-smallscreen {
+  display: none;
+}
+.title-gray {
+  text-align: center;
+  margin-bottom: 50px;
+  margin: auto auto;
+  width: 200px;
+  padding: 10px;
+  border-bottom: 6px solid rgba(78, 78, 255, 2);
+}
+.intro {
+  text-align: left;
+  overflow: hidden;
+  padding-left: 2em;
   justify-content: center;
   text-align: center;
 }
-
-.about > h1 {
-  margin-bottom: 20px;
-  font-size: 36px;
+.about-paragraph {
+  color: #787878;
+  line-height: 1.5;
+  font-size: 20px;
+  letter-spacing: 0.4px;
+  word-spacing: 1px;
+  text-align: center;
+  margin: 2em auto;
+  max-width: 700px;
 }
-
-.about > p {
-  font-size: 24px;
+.about-title {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-family: "CoHeadlineW01-Regular";
 }

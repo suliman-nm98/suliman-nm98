@@ -11,12 +11,11 @@ function Home() {
         <Banner />
       </div>
       <div className="home__row">
-        <About />
-      </div>
-      <div className="home__row">
         <Projects />
       </div>
-
+      <div className="home__row">
+        <About />
+      </div>
       <div className="home__row">
         <Timeline />
       </div>
